@@ -33,7 +33,31 @@
             </select>
             <br/><br/>
 
+            <label>
+                <input type="checkbox" nome="termos" required/>
+                Eu aceito os termos e condições.
+            </label>
+            <br/><br/>
+
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required/>
+            <br/><br/>
             
+            <label for="interesses">Interesses (selecione múltiplos):</label>
+            <select id="interesses" name="interesses[]" multiple>
+                <option value="esportes">Esportes</option>
+                <option value="musica">Música</option>
+                <option value="tecnologia">Tecnologia</option>
+                <option value="viagens">Viagens</option>
+            </select>
+            <br/><br/>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva uma mensagem..."></textarea>
+            <br/><br/>
+
+            <button type="submit">Enviar Inscrição</button>
+
         </form>
     </body>
 </html>
