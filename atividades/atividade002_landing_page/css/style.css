@@ -1,0 +1,13 @@
+body {
+    font-family: "Didatic Goth", serif;
+    font-weight: 400;
+    background-color: #1d1d1d;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 10px;
+    color: white;
+    font-size: 24px;
+}
