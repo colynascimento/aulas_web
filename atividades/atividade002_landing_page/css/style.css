@@ -1,13 +1,116 @@
 body {
-    font-family: "Didatic Goth", serif;
+    font-family: "Lato", serif;
     font-weight: 400;
     background-color: #1d1d1d;
     margin: 0;
     padding: 0;
 }
 
-header {
-    margin: 10px;
-    color: white;
-    font-size: 24px;
+/* Menu de navegação */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: #f4f4f4;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+.menu-esquerdo, .menu-direito {
+    margin: 0 25px;
+    padding: 10px 0;
+}
+
+nav h1 {
+    text-align: center;
+    font-family: "UnifrakturMaguntia", serif;
+    font-weight: 300;
+    font-size: 68px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f4f4f4;
+    margin: 20px;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 50px;
+}
+
+.conteiner-show {
+    flex: 0 0 calc(35% - 25px);
+    background-color: rgba(255, 255, 255, 0.103);
+    text-align: center;
+}
+
+.conteiner-show h2{
+    color: rgba(133, 133, 133, 0.349);
+    font-weight: 600;
+}
+
+.conteiner-botao {
+    flex: 0 0 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.conteiner-botao button {
+    width: 400px;
+    background-color: #f4f4f4;
+    color: #2b2b2b;
+    padding: 30px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.conteiner-botao button:hover {
+    background-color: rgb(80, 1, 1);
+    color: #f4f4f4;
+}
+
+/* Seção Artistas */
+
+section h2{
+    text-align: start;
+    font-family: "UnifrakturMaguntia", serif;
+    font-weight: 300;
+    font-size: 60px;
+    margin: 50px;
+    padding: 50px;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section p{
+    margin: 0 50px;
+    padding: 10px;
+}
+
+#artistas {
+    background-color: rgba(158, 0, 0, 0.726);
+    display: flex;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#artistas h3 {
+    margin: 0 55px;
+    padding: 10px;
+}
+
+#artistas img {
+    width: 500px;
+    height: auto;
+    margin-left: auto;
 }
