@@ -20,7 +20,7 @@ nav ul {
     display: flex;
     padding: 0;
     margin: 0;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .menu-esquerdo, .menu-direito {
@@ -47,6 +47,7 @@ header button{
     background-color: #f4f4f4;
     color: #2b2b2b;
     border-radius: 5px;
+    font-size: 12px;
 }
 
 header button:hover {
@@ -139,6 +140,11 @@ section p{
     background-color: rgb(214, 206, 135);
 }
 
+#midia-introducao {
+    text-align: start;
+    flex: 0 0 100%;
+}
+
 .conteiner-midia {
     flex: 0 0 calc(25% - 25px);
     background-color: rgba(214, 192, 112, 0.651);
@@ -146,6 +152,12 @@ section p{
     border-style: double;
     text-align: center;
     margin-bottom: 75px;
+}
+
+.conteiner-midia h2 {
+    font-size: 20px;
+    font-family: "Didatic Goth", serif;
+    padding-bottom: 30px;
 }
 
 #texto-midia {
@@ -160,19 +172,23 @@ section p{
     border: 4px solid #ffefc8;
 }
 
-.conteiner-midia h2 {
-    font-size: 20px;
-    font-family: "Didatic Goth", serif;
-    padding-bottom: 30px;
+/* Seção Info*/
+
+#info {
+    background-color: #f8f9fa;
 }
 
-/* Seção Info, Contato e Lojinha */
+#info h2 {
+    color: #1d1d1d;
+}
 
-#info, #contato, #lojinha {
+/* Seção Contato e Lojinha */
+
+#contato, #lojinha {
     color: #f4f4f4;
 }
 
-#info h2, #contato h2, #lojinha h2 {
+#contato h2, #lojinha h2 {
     color: #f4f4f4;
     text-shadow: 2px 2px 4px rgba(197, 197, 197, 0.5);
 }
