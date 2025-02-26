@@ -163,10 +163,9 @@ section p{
 
 #midia-introducao {
     text-align: start;
-    flex: 0 0 100%;
     align-items: center;
-    padding: 0 0 0 7%;
-    margin: 50px;
+    margin: 5%;
+    padding-left: 6.5%;
 }
 
 .conteiner-midia {
@@ -181,7 +180,6 @@ section p{
 .conteiner-midia h2 {
     font-size: 20px;
     font-family: "Didatic Goth", serif;
-    padding-bottom: 30px;
 }
 
 #texto-midia {
