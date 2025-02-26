@@ -63,8 +63,8 @@ header button:hover {
     color: #f4f4f4;
 }
 
-/* Main */
-main {
+/* Conteiner principal */
+#principal {
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
@@ -78,8 +78,11 @@ main {
 }
 
 .conteiner-show h2{
-    color: rgba(133, 133, 133, 0.349);
+    color: rgba(177, 177, 177, 0.349);
+    font-family: "Lato", serif;
     font-weight: 600;
+    font-size: 30px;
+    text-align: center;
 }
 
 .conteiner-botao {
@@ -93,7 +96,7 @@ main {
     padding: 30px 20px;
     margin-bottom: 50px;
     border-radius: 5px;
-    background-color: #f4f4f4;
+    background-color: #f8f8f8;
     color: #2b2b2b;
 }
 
@@ -110,9 +113,8 @@ section h2{
     font-weight: 300;
     font-size: 60px;
     margin: 5px;
-    padding: 50px 50px 25px 50px;
-    color: #000000;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 30px 50px 25px 50px;
+    text-shadow: 2px 2px 4px rgba(1, 0, 0, 0.5);
 }
 
 section p{
@@ -121,14 +123,25 @@ section p{
 }
 
 #artistas {
-    background-color: rgba(158, 0, 0, 0.726);
     display: flex;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(158, 0, 0, 0.726);
+    color: #ff6766;
+    text-shadow: 2px 2px 4px rgba(1, 0, 0, 0.5);
 }
 
 #artistas h3 {
     margin: 0 55px;
     padding: 10px;
+}
+
+#conteiner-artistas {
+    align-items: center;
+    padding: 0 0 0 7%;
+    margin: 50px;
+}
+
+#artistas-subtitulo {
+    margin-bottom: 60px;
 }
 
 #artistas img {
