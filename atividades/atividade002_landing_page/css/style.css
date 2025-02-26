@@ -136,8 +136,8 @@ section p{
 
 #conteiner-artistas {
     align-items: center;
-    padding: 0 0 0 7%;
-    margin: 50px;
+    margin: 5%;
+    padding-left: 6.5%;
 }
 
 #artistas-subtitulo {
@@ -158,11 +158,15 @@ section p{
     justify-content:center;
     gap: 50px;
     background-color: rgb(214, 206, 135);
+    color: #0d0e08;
 }
 
 #midia-introducao {
     text-align: start;
     flex: 0 0 100%;
+    align-items: center;
+    padding: 0 0 0 7%;
+    margin: 50px;
 }
 
 .conteiner-midia {
