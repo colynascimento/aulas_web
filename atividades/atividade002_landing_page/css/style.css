@@ -163,7 +163,7 @@ section p{
 #midia-introducao {
     text-align: start;
     align-items: center;
-    margin: 5%;
+    margin: 5% 5% 3% 5%;
     padding-left: 6.5%;
 }
 
@@ -175,16 +175,39 @@ section p{
 }
 
 .conteiner-midia {
-    background-color: rgba(214, 192, 112, 0.651);
-    border: 3px solid #ffefc8;
-    border-style: double;
     text-align: center;
-    margin-bottom: 75px;
+    width: 250px;
+    height: 450px;
+    margin-bottom: 5%;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: end;
+    border: #ffefc8 double 5px;
 }
 
 .conteiner-midia h2 {
-    font-size: 20px;
+    text-align: center;
+    font-size: 18px;
     font-family: "Didatic Goth", serif;
+    padding: 0px 5px 15px 5px;
+    text-shadow: none;
+}
+
+.conteiner-midia h2:hover {
+    font-weight: 600;
+}
+
+#card1 {
+    background-image: url(../imgs/card_img3.png);
+    justify-content: center;
+}
+
+#card2 {
+    background-image: url(../imgs/card_img2.png);
+}
+
+#card3 {
+    background-image: url(../imgs/card_img1.png);
 }
 
 #texto-midia {
@@ -205,7 +228,7 @@ section p{
 }
 
 #info-conteudo {
-    padding: 5% 0 0 6.5%;
+    padding: 6.5% 0 0 7.5%;
     margin: 0 5%;
 }
 
@@ -215,8 +238,20 @@ section p{
 
 /* Seção Contato e Lojinha */
 
+#contato-e-lojinha {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    margin: 3% 5%;
+    padding: 0 6.5%;
+  }
+  
+
 #contato, #lojinha {
     color: #f4f4f4;
+    width: 50%;
+    box-sizing: border-box;
 }
 
 #contato h2, #lojinha h2 {
