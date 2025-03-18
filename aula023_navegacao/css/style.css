@@ -50,11 +50,11 @@ nav {
     background-color: #34495e;
 }
 
-.menuhover li {
+.menu-hover li {
     margin-right: 20px;
 }
 
-.menuhover a {
+.menu-hover a {
     text-decoration: none;
     padding: 15px;
     color: white;
@@ -69,6 +69,88 @@ nav {
 .menu-submenu ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #2980b9;
 }
 
+.menu-submenu li {
+    margin-right: 20px;
+    position: relative;
+}
 
+.menu-submenu a {
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    display: block;
+}
+
+.menu-submenu .submenu:hover > ul {
+    display: block;
+}
+
+.menu-submenu .submenu ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #3498db;
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-submenu .submenu ul li {
+    width: 180px;
+}
+
+.menu-submenu .submenu ul li a {
+    padding: 10px;
+    color: white;
+}
+
+/* Menu com Animação */
+.menu-animado ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #8e44ad;
+}
+
+.menu-animado li {
+    margin-right: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-animado a {
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.menu-animado li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #9b59b6;
+    transition: left 0.4s ease;
+}
+
+.menu-animado li:hover::before {
+    left: 0;
+}
+
+.menu-animado a:hover {
+    color: yellow;
+    z-index: 2;
+}
