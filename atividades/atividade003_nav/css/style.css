@@ -1,0 +1,236 @@
+/* Página principal index */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background-image: url('../img/dramatic-and-luxurious-apartment-in-dark-colors.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.principal {
+    height: 100%;
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 25px 250px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+  }
+
+h1 {
+    font-size: 52px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0px;
+    font-size: 16px;
+}
+
+nav ul li a {
+    position: relative;
+    margin: 20px;
+}
+
+/* Efeito no nav */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+.titulo-subtitulo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 25%;
+}
+
+.grupo-subtitulo {
+    display: flex;
+    align-items: center;
+}
+
+.subtitulo-linha {
+    width: 150px; 
+    height: 2px;
+    background-color: white;
+}
+
+.subtitulo {
+    margin: 5px;
+    font-size: 20px;
+}
+
+.titulo {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 900;
+    width: 500px;
+}
+
+.titulo-linha-divisoria {
+    width: 475px; 
+    height: 2px;
+    background-color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    height: 50px;
+}
+
+footer p {
+    padding: 15px;
+}
+
+/* Página sobre (quem somos) */
+
+.pagina-sobre {
+
+}
+
+.principal-sobre {
+    min-height: 100vh;
+    color: white; 
+    background-color: rgb(0, 0, 0);
+    padding: 25px 250px;
+}
+
+.conteudo-sobre {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.titulo-sobre {
+    text-transform: uppercase;
+    font-family: 'Nunito sans', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    margin: 150px 60px;
+}
+
+.texto-sobre-principal {
+    font-size: 18px;
+    margin: 0 auto 100px auto;
+    width: 500px;
+
+}
+
+.imagem-fundo-sobre-historia {
+    position: relative;
+    background-image: url('../img/silhouettes-several-colleagues-communicating-office.jpg'); /* Troque pelo caminho da imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    margin: -25px -250px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    height: 100%;
+    width: 100%;
+    align-items: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    z-index: 1;
+}
+
+.conteudo-sobre-historia {
+    position: relative;
+    z-index: 2;
+    color: white;
+    width: 400px;
+    padding: 20px;
+    text-align: start;
+}
+
+.conteudo-sobre h2 {
+    text-transform: uppercase;
+    padding: 40px 0;
+    font-size: 36px;
+}
+
+.conteudo-sobre ul {
+    list-style: none;
+    padding: 0 40px;
+
+}
+
+.conteudo-sobre ul li, .texto-sobre-dna {
+    padding: 5px;
+}
+
+.conteudo-sobre strong {
+    text-transform: uppercase;
+}
+
+.conteudo-sobre-dna {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subtitulo-sobre-dna {
+    margin: 60px;
+}
+
+.texto-e-valores-sobre-dna {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: start;
+}
+
+.coluna-texto-sobre-dna, .lista-sobre-valores {
+    flex: 1 1 45%;
+    min-width: 300px;
+}
