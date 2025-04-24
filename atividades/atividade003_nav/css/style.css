@@ -124,20 +124,21 @@ footer p {
 
 /* Página sobre (quem somos) */
 
-.pagina-sobre {
-
-}
-
-.principal-sobre {
+.principal-sobre, .principal-portfolio, .principal-contato {
     min-height: 100vh;
     color: white; 
     background-color: rgb(0, 0, 0);
     padding: 25px 250px;
 }
 
-.conteudo-sobre {
+.conteudo-sobre, .conteudo-portfolio {
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    margin: 0 auto 150px auto;
+}
+
+.conteudo-sobre-principal {
+    margin: 0 auto 200px auto;
 }
 
 .titulo-sobre {
@@ -148,9 +149,9 @@ footer p {
     margin: 150px 60px;
 }
 
-.texto-sobre-principal {
+.texto-sobre-principal, .texto-portfolio-introducao {
     font-size: 18px;
-    margin: 0 auto 100px auto;
+    margin: auto;
     width: 500px;
 
 }
@@ -233,4 +234,115 @@ footer p {
 .coluna-texto-sobre-dna, .lista-sobre-valores {
     flex: 1 1 45%;
     min-width: 300px;
+}
+
+/* Página portfólio */
+
+.titulo-portfolio {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Nunito sans', sans-serif;
+    font-weight: 800;
+    font-size: 94px;
+    margin: 180px 60px;
+}
+
+.texto-portfolio-introducao {
+    padding: 5px;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0px;
+}
+
+.portfolio-conteudo-imagem-1, .portfolio-conteudo-imagem-2, .portfolio-conteudo-imagem-3 {
+    position: relative;
+    width: 350px;
+    height: 500px;
+}
+
+.portfolio-conteudo-imagem-1 img, .portfolio-conteudo-imagem-2 img, .portfolio-conteudo-imagem-3 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-conteudo-texto {
+    width: 450px;
+}
+
+.portfolio-titulo {
+    font-size: 42px;
+}
+
+.portfolio-subtitulo {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 30px 0 30px;
+}
+
+.portfolio-texto {
+    font-size: 14px;
+    width: 350px;
+}
+
+.portfolio-container-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.portfolio-titulo-tags {
+    margin: 20px 0;
+}
+
+.portfolio-tags {
+    border: 1px solid white;
+    border-radius: 17px;
+    padding: 10px;
+    font-size: 11px;
+}
+
+.portfolio-botao {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    border: 15px solid white;
+    margin-top: 30px;
+}
+
+/* Página portfólio */
+
+.conteudo-contato {
+    display: block;
+}
+
+.titulo-contato {
+    margin: 100px 0px;
+    font-size: 64px;
+}
+
+.info-contato {
+    font-size: 14px;
+    width: 350px;
+}
+
+.texto-contato-email, .texto-contato-telefone{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+
+.texto-contato-endereço-linha1, .texto-contato-endereço-linha2 {
+    font-size: 16px;
+}
+
+.botao-contato-conheca, .botao-contato-whatsapp {
+    border-radius: 20px;
+    border: 10px solid white;
+    margin: 30px 15px 0px 0px;
+
 }
