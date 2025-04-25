@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: white;
+}
+
+.home {
+    height: 100%;
+    width: 100%;
+}
+
+#barra-search {
+    width: 500px;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    font-size: 20px;
+}
