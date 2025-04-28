@@ -19,9 +19,42 @@ body {
     width: 100%;
 }
 
+header {
+    background-color: #fff;
+    height: 200px;
+    width: 100%;
+}
+
+#header-linha-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 200px;
+}
+
+#container-barra-search {
+    position: relative;
+}
+
 #barra-search {
     width: 500px;
+    height: 35px;
+    padding-right: 50px;
     border: 1px solid rgb(180, 180, 180);
     border-radius: 5px;
     font-size: 20px;
+}
+
+#botao-lente-search {
+    position: absolute;
+    background: none;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+    cursor: pointer;
+    border: none;
 }
