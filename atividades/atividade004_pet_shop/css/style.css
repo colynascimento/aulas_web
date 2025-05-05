@@ -21,13 +21,13 @@ body {
 
 header {
     background-color: #fff;
-    height: 200px;
+    height: auto;
     width: 100%;
-    padding: 0px 200px;
 }
 
-#header-linha-1 {
+.header-linha-1 {
     display: flex;
+    padding: 16px 48px 0px;
     justify-content: space-between;
     align-items: center;
 }
@@ -41,12 +41,12 @@ header {
 }
 
 #barra-search {
-    width: 500px;
-    height: 35px;
+    width: 650px;
+    height:55px;
     padding-left: 10px;
-    border: 1px solid rgb(180, 180, 180);
-    border-radius: 5px;
-    font-size: 20px;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 17px;
+    font-size: 14px;
 }
 
 #botao-lente-search {
@@ -60,6 +60,12 @@ header {
     border: none;
 }
 
+#icones-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 #botao-login, #botao-favoritos, #botao-carrinho {
     border: none;
     background: none;
@@ -67,4 +73,86 @@ header {
     cursor: pointer;
     border: none;
     padding: 10px;
+}
+
+nav {
+    display: block;
+    position: relative;
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    color: #555;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+
+.header-linha-2 .itens-submenu-produtos:hover > ul {
+    display: block;
+}
+
+.header-linha-2 .itens-submenu-produtos ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+
+.header-linha-2 .itens-submenu-produtos ul li {
+    width: 180px;
+}
+
+.header-linha-2 .itens-submenu-produtos ul li a {
+    display: inline-block;
+    color: #555;
+    font-weight: 400;
+    margin-bottom: 10px;
+    height: 10px;
+}
+
+
+.barra-subtitulo-container {
+    display: flex;
+    background-color: #eeeeee;
+    font-size: 12px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra-subtitulo {
+    align-items: center;
+    display: block;
+    color: #454545;
+}
+
+.banner-imagem-home {
+    position: relative;
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.imagem-home {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: right;
 }

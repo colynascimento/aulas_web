@@ -8,8 +8,8 @@
 </head>
     <body class="home">
         <header>
-            <div id="header-linha-1">
-                <img src="img/logo-petplace.png" href="index.html" id="logo">
+            <div class="header-linha-1">
+                <a href="index.html"><img src="img/logo-petplace.png" id="logo"></a>
 
                 <div id="container-barra-search">
                     <input type="text" placeholder="O que o seu pet precisa?" id="barra-search">
@@ -45,15 +45,16 @@
                 </div>
             </div>
 
-            <nav id="header-linha-2">
-                <ul>
-                    <li><a href="produtos.html">Produtos</a></li>
+            <nav class="header-linha-2">
+                <ul id="itens-menu">
+                    <li class="itens-submenu-produtos"><a href="produtos.html">Produtos</a>
                         <ul>
                             <li><a href="">Ração e Petiscos</a></li>
                             <li><a href="">Farmácia</a></li>
                             <li><a href="">Brinquedos</a></li>
                             <li><a href="">Beleza e Limpeza</a></li>
                         </ul>
+                    </li>
                     <li><a href="plano-de-saude.html">Plano de Saúde</a></li>
                     <li><a href="servicos.html">Serviços</a></li>
                     <li><a href="blog.html">Blog</a></li>
@@ -61,12 +62,14 @@
                 </ul>
             </nav>
 
-            <div home="barra-subtitulo-container"><h2 class="barra-subtitulo">O melhor Petshop para seu pet</h2></div>
+            <div class="barra-subtitulo-container">
+                <h2 class="barra-subtitulo">O melhor lugar para o seu pet!</h2>
+            </div>
         </header>
 
         <div class="principal-home">
             <section class="banner-imagem-home">
-                <img class="imagem-home" src="">
+                <img class="imagem-home" src="img/banner_alimentador-inteligente-e-brinquedos-semana-capitu.jpg">
                 <h3 class="titulo-imagem-home">Pet da Semana: Capitu</h3>
                 <p class="descricao-imagem-home">Mande uma foto do seu pet usando para aparecer aqui! :)</p>
             </section>
